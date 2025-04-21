@@ -54,7 +54,7 @@ def display_results(results_file: str = "rag_results.json"):
     # Display analysis if available
     if analysis:
         console.print("\n[bold]Analysis:[/bold]")
-        console.print(Panel(analysis, title="GPT-4 Analysis", border_style="blue"))
+        console.print(Panel(analysis, title="GPT-4o Analysis", border_style="blue"))
 
 def main():
     parser = argparse.ArgumentParser(description="Display RAG query results")
