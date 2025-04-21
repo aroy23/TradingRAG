@@ -57,7 +57,7 @@ OPENAI_API_KEY=your_openai_api_key
 ```
 DemoRAG/
 ├── tradingrag/
-│   ├── data/
+│   ├── data_collect/
 │   │   └── collect_charts.py      # Script for collecting chart data
 │   └── retrieval/
 │       └── rag_query.py           # Script for RAG-based queries
