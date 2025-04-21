@@ -1,0 +1,10 @@
+.venv
+.env
+data/
+rag_results.json
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
