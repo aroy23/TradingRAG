@@ -78,7 +78,6 @@ class RAGQuery:
         momentum_10 = df['Close'].pct_change(10).iloc[-1] * 100
         
         # Calculate volume pattern
-        volume_ma = df['Volume'].rolling(window=5).mean()
         recent_volume = df['Volume'].iloc[-5:].mean()
         avg_volume = df['Volume'].mean()
         volume_trend = "increasing" if recent_volume > avg_volume else "decreasing"
