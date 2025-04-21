@@ -1,4 +1,5 @@
 .venv
+venv
 .env
 data/
 rag_results.json

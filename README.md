@@ -43,7 +43,7 @@ cd TradingRAG
 
 2. Create a virtual environment and install dependencies:
 ```bash
-python -m venv venv
+python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
@@ -70,22 +70,22 @@ DemoRAG/
 
 1. Collect Chart Data:
 ```bash
-python -m tradingrag.data.collect_charts
+python3 -m tradingrag.data_collect.collect_charts
 ```
 
 2. Run RAG Query:
 ```bash
-python -m tradingrag.retrieval.rag_query --query "Show me stocks with downward upward momentum" --generate --top_k 1
+python3 -m tradingrag.retrieval.rag_query --query "Show me stocks with downward upward momentum" --generate --top_k 2
 ```
 
 3. Display Results:
 ```bash
 # Terminal display
-python -m tradingrag.retrieval.display_results
+python3 -m tradingrag.retrieval.display_results
 
 # Web interface
-python -m tradingrag.retrieval.web_display
+python3 -m tradingrag.retrieval.web_display
 ```
-Then open your browser to http://localhost:5000 to view the results in a web interface.
+Then, navigate to the link in the terminal to view the results in a web interface.
 
 Results are saved in JSON format to the specified output file (default: rag_results.json).
