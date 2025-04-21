@@ -78,4 +78,14 @@ python -m tradingrag.data.collect_charts
 python -m tradingrag.retrieval.rag_query --query "Show me stocks with strong upward momentum" --generate --top_k 1
 ```
 
+3. Display Results:
+```bash
+# Terminal display
+python -m tradingrag.retrieval.display_results
+
+# Web interface
+python -m tradingrag.retrieval.web_display
+```
+Then open your browser to http://localhost:5000 to view the results in a web interface.
+
 Results are saved in JSON format to the specified output file (default: rag_results.json).
