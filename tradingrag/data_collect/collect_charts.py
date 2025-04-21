@@ -52,7 +52,7 @@ def main():
     end_date = datetime.now().strftime("%Y-%m-%d")
     start_date = (datetime.now() - timedelta(days=31)).strftime("%Y-%m-%d")
     
-    symbols = ["AAPL", "MSFT", "GOOGL", "AMZN", "META", "FBLG"]
+    symbols = ["AAPL", "MSFT", "GOOGL", "AMZN", "META"]
     for symbol in symbols:
         df = collector.get_stock_data(symbol, start_date, end_date)
         collector.save_chart_data(df, f"{symbol}_chart.csv")
