@@ -55,7 +55,7 @@ OPENAI_API_KEY=your_openai_api_key
 
 ## Project Structure
 ```
-DemoRAG/
+TradingRAG/
 ├── tradingrag/
 │   ├── data_collect/
 │   │   └── collect_charts.py      # Script for collecting chart data
