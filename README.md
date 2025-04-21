@@ -13,7 +13,7 @@ The system consists of two main components:
    - Uses Yahoo Finance API for data retrieval
    - Stores data in CSV format for analysis
    - Currently tracks:
-     - Stocks: AAPL, MSFT, GOOGL, AMZN, META, FBLG
+     - Stocks: AAPL, MSFT, GOOGL, AMZN, META
      - Indices: S&P 500 (^GSPC), NASDAQ (^IXIC), Dow Jones (^DJI)
 
 2. **RAG Query Pipeline**
@@ -75,7 +75,7 @@ python -m tradingrag.data.collect_charts
 
 2. Run RAG Query:
 ```bash
-python -m tradingrag.retrieval.rag_query --query "Show me stocks with strong upward momentum" --generate --top_k 1
+python -m tradingrag.retrieval.rag_query --query "Show me stocks with downward upward momentum" --generate --top_k 1
 ```
 
 3. Display Results:
