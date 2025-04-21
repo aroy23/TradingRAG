@@ -43,7 +43,7 @@ cd TradingRAG
 
 2. Create a virtual environment and install dependencies:
 ```bash
-python3 -m venv venv
+python3 -m venv .venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
@@ -75,7 +75,7 @@ python3 -m tradingrag.data_collect.collect_charts
 
 2. Run RAG Query:
 ```bash
-python3 -m tradingrag.retrieval.rag_query --query "Show me stocks with downward upward momentum" --generate --top_k 2
+python3 -m tradingrag.retrieval.rag_query --query "Show me stocks with downward momentum" --generate --top_k 2
 ```
 
 3. Display Results:
