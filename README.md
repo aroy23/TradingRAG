@@ -76,6 +76,9 @@ python3 -m tradingrag.data_collect.collect_charts
 2. Run RAG Query:
 ```bash
 python3 -m tradingrag.retrieval.rag_query --query "Show me stocks with downward momentum" --generate --top_k 2
+
+Options:
+--query QUERY [--top_k TOP_K] [--generate] [--output OUTPUT]
 ```
 
 3. Display Results:
