@@ -106,7 +106,7 @@ class RAGQuery:
         
         return description
 
-    def retrieve_similar_charts(self, query_embedding: np.ndarray, top_k: int = 5) -> List[Dict]:
+    def retrieve_similar_charts(self, query_embedding: np.ndarray, top_k: int = 2) -> List[Dict]:
         """Search for similar chart patterns based on semantic matching."""
         if query_embedding.size == 0:
             return []
