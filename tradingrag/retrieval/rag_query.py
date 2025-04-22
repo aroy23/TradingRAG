@@ -176,7 +176,7 @@ class RAGQuery:
             context = self._prepare_generation_context(results)
             
             response = self.client.chat.completions.create(
-                model="gpt-4",
+                model="gpt-4o",
                 messages=[
                     {"role": "system", "content": "You are a financial analyst providing insights on market patterns."},
                     {"role": "user", "content": f"Query: {query}\n\nContext: {context}\n\nProvide a detailed analysis."}
